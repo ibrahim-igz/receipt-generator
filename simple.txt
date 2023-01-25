@@ -1,5 +1,5 @@
 {
-    "width": 600,
+    "width": 350,
     "height": 800,
     "elements": [
         {
@@ -18,7 +18,7 @@
             "size": %s,
             "color": "#000000"
         },
-        {
+	{
             "x": %s,
             "y": 62,
             "text": "%s",
@@ -26,29 +26,110 @@
             "size": %s,
             "color": "#000000"
         },
-        {
-            "x": 50,
-            "y": 150,
-            "text": "Item 1: $10.99",
+	{
+            "x": %s,
+            "y": 82,
+            "text": "%s",
             "font": "arial.ttf",
-            "size": 10,
+            "size": %s,
+            "color": "#000000"
+        },
+	{
+            "x": %s,
+            "y": 102,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": %s,
+            "color": "#000000"
+        },
+	{
+            "x": %s,
+            "y": 122,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": %s,
+            "color": "#000000"
+        },
+	{
+            "x": %s,
+            "y": 142,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": %s,
             "color": "#000000"
         },
         {
-            "x": 50,
-            "y": 200,
-            "text": "Item 2: $5.99",
+            "x": %s,
+            "y": 162,
+            "text": "%s",
             "font": "arial.ttf",
-            "size": 10,
+            "size": %s,
+            "color": "#000000"
+        },
+	{
+            "x": 10,
+            "y": 202,
+            "text": "Remarks:",
+            "font": "arial.ttf",
+            "size": 14,
+            "color": "#000000"
+        },
+	{
+            "x": 10,
+            "y": 210,
+            "text": "_________________________________________",
+            "font": "arial.ttf",
+            "size": 14,
+            "color": "#000000"
+        },
+	{
+            "x": 70,
+            "y": 230,
+            "text": "Price",
+            "font": "arial.ttf",
+            "size": 12,
             "color": "#000000"
         },
         {
-            "x": 50,
-            "y": 250,
-            "text": "Total: $16.98",
+            "x": 120,
+            "y": 230,
+            "text": "GST",
             "font": "arial.ttf",
-            "size": 10,
+            "size": 12,
             "color": "#000000"
-        }
+        },
+	{
+            "x": 120,
+            "y": 240,
+            "text": "Rate",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 170,
+            "y": 230,
+            "text": "QTY",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 220,
+            "y": 230,
+            "text": "GST",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 270,
+            "y": 230,
+            "text": "Total",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	
     ]
 }
