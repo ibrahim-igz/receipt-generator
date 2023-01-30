@@ -63,6 +63,7 @@ def random_contact():
     left_space_ = measure_pixel(font, contact_)
     return left_space_, contact_, font
 
+
 def random_pos_num():
     font = 12
     POS = random.randint(123456, 789898)
@@ -70,12 +71,52 @@ def random_pos_num():
     left_space_ = measure_pixel(font, pos_num)
     return left_space_, pos_num, font
 
+
 def random_invoice_num():
     font = 12
-    INV = random.randint(1234, 9898)
+    INV = random.randint(1, 9898)
     inv_num = f"Invoice NO: {str(INV)}"
     left_space_ = measure_pixel(font, inv_num)
     return left_space_, inv_num, font
+
+
+def random_items():
+    final_data = ''
+    GST_RATE = 17
+    items = [{"Name": "Diamond cling wrap", "Price": 132}, {"Name": "Pepsi Coke 500ml", "Price": 50},
+             {"Name": "Bonus Surf Red 1kg", "Price": 350}, {"Name": "Dentist care", "Price": 70},
+             {"Name": "Galaxy Chocolate", "Price": 200}, {"Name": "Pine Apple 1kg", "Price": 190}]
+
+    y_axis = 295
+    sub_total = 0
+    for num in range(len(items)):
+        random_quantity = [4, 2, 1, 3]
+        random.shuffle(random_quantity)
+        random_qty_number = random.choice(random_quantity)
+        item = items[num]
+        y_axis_price = y_axis + 20
+        item_gst = round((17 / 100) * (item['Price'] * random_qty_number), 2)
+        total = (item['Price'] * random_qty_number) + item_gst
+        file_ = open('random_item_temp.txt', 'r')
+        data_ = file_.read()
+        data_ = data_ % (
+            y_axis, str(num+1) + '-   ' + item['Name'], y_axis_price, item['Price'], y_axis_price, GST_RATE, y_axis_price, random_qty_number,
+            y_axis_price, item_gst,  y_axis_price, total)
+        file_.close()
+        # data_ = data_ % ("a","a","a","a","a","a","a","a","a","a","a","a""a")
+        final_data += data_
+        sub_total += total
+        y_axis += 35
+    final_data += """{
+            "x": 10,
+            "y": %s,
+            "text": "_________________________________________",
+            "font": "arial.ttf",
+            "size": 14,
+            "color": "#000000"
+        },""" % (y_axis_price+20)
+    return sub_total, final_data
+
 
 file = open('simple.txt', 'r')
 data = file.read()
@@ -91,6 +132,11 @@ data = data % (
     contact_left_space, contact, contact_font_size, pos_left_space, pos, pos_font_size,
     inv_left_space, inv, inv_font_size,
     time_left_space, date_time, time_font_size)
+sub_total, item_data = random_items()
+print(sub_total)
+data += item_data
+last = """]}"""
+data = data + last
 data = ast.literal_eval(data)
 print(data)
 

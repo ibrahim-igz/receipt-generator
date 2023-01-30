@@ -83,53 +83,67 @@
             "color": "#000000"
         },
 	{
-            "x": 70,
+            "x": 10,
             "y": 230,
+            "text": "#   Item Description",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 80,
+            "y": 250,
             "text": "Price",
             "font": "arial.ttf",
             "size": 12,
             "color": "#000000"
         },
         {
-            "x": 120,
-            "y": 230,
+            "x": 145,
+            "y": 250,
             "text": "GST",
             "font": "arial.ttf",
             "size": 12,
             "color": "#000000"
         },
 	{
-            "x": 120,
-            "y": 240,
+            "x": 145,
+            "y": 265,
             "text": "Rate",
             "font": "arial.ttf",
             "size": 12,
             "color": "#000000"
         },
 	{
-            "x": 170,
-            "y": 230,
+            "x": 205,
+            "y": 250,
             "text": "QTY",
             "font": "arial.ttf",
             "size": 12,
             "color": "#000000"
         },
 	{
-            "x": 220,
-            "y": 230,
+            "x": 255,
+            "y": 250,
             "text": "GST",
             "font": "arial.ttf",
             "size": 12,
             "color": "#000000"
         },
 	{
-            "x": 270,
-            "y": 230,
+            "x": 305,
+            "y": 250,
             "text": "Total",
             "font": "arial.ttf",
             "size": 12,
             "color": "#000000"
         },
+	{
+            "x": 10,
+            "y": 265,
+            "text": "_________________________________________",
+            "font": "arial.ttf",
+            "size": 14,
+            "color": "#000000"
+        },
 	
-    ]
-}

@@ -1,0 +1,49 @@
+{
+            "x": 10,
+            "y": %s,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+},
+{
+            "x": 80,
+            "y": %s,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+        {
+            "x": 145,
+            "y": %s,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 205,
+            "y": %s,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 255,
+            "y": %s,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	{
+            "x": 305,
+            "y": %s,
+            "text": "%s",
+            "font": "arial.ttf",
+            "size": 12,
+            "color": "#000000"
+        },
+	
