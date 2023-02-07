@@ -1,8 +1,0 @@
-{
-                    "x": 10,
-                    "y": %s,
-                    "text": "%s",
-                    "font": "arial.ttf",
-                    "size": 12,
-                    "color": "#000000"
-                },
