@@ -1,11 +1,11 @@
 {
     "width": 350,
-    "height": 800,
+    "height": %s,
     "elements": [
         {
             "x": 0,
             "y": 0,
-            "text": "Receipt No: 1",
+            "text": "Receipt No: %s",
             "font": "arial.ttf",
             "size": 15,
             "color": "#000000"
